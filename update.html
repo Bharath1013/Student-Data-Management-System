@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Student</title>
+  </head>
+  <body>
+    <h1>Update Student</h1>
+    <form method="POST" action="/update/{{ data[0] }}">
+      <label for="student_name">Student Name:</label><br>
+      <input type="text" id="student_name" name="student_name" value="{{ data[1] }}"><br><br>
+      <label for="branch">Branch:</label><br>
+      <input type="text" id="branch" name="branch" value="{{ data[2] }}"><br><br>
+      <label for="Scholar_no">Scholar No:</label><br>
+      <input type="number" id="Scholar_no" name="Scholar_no" value="{{ data[3] }}"><br><br>
+      <label for="Addresss">Address:</label><br>
+      <textarea id="Addresss" name="Addresss">{{ data[4] }}</textarea><br><br>
+      <label for="Email">Email:</label><br>
+      <input type="text" id="Email" name="Email" value="{{ data[5] }}"><br><br>
+      <label for="Joined_date">Joined Date:</label><br>
+      <input type="date" id="Joined_date" name="Joined_date" value="{{ data[6] }}"><br><br>
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>

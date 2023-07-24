@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFORMATION</title>
+    <h1>STUDENT DATA</h1>
+<table>
+    <tr>
+        <td>NAME</td>
+        <td>BRANCH</td>
+        <td>SCHOLAR NO</td>
+        <td>ADDRESS</td>
+        <td>EMAIL</td>
+          <td>JOINED DATE</td>
+        <td>ACTIONS</td>
+    </tr>
+      <tr>
+          <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          <td><a href="\index">ADD</a>
+          <br>
+          <a href="">UPDATE</a>
+          <br>
+          <a href="">DELETE</a>
+          </td>
+      </tr>
+</table>
+<body>
+  <tr>
+      <td>{{ student_name }}</td>
+      <td>{{ branch }}</td>
+      <td>{{ Scholar_no}}</td>
+      <td>{{ Address }}</td>
+      <td>inf.Email</td>
+      <td>inf.Joined_date</td>
+   </tr>
+   <tr> <a href="\index">ADD</a>
+          <br>
+          <a href="">UPDATE</a>
+          <br>
+          <a href="">DELETE</a>
+      </tr>
+{% endfor %}
+</body>
+</html>
